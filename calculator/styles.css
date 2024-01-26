@@ -53,9 +53,13 @@ button{
 }
 button:hover{
     background-color: hsl(0 ,0% ,40%);
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 button:active{
      background-color: hsl(0 ,0% ,50%);
+      transform: scale(1.2);
+    transition-duration: 0.1s;
 }
 .operator-btn{
      background-color: hsl(30 ,100% ,40%);
