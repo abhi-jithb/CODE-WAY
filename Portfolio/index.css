@@ -106,9 +106,11 @@ span{
      border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
+    transition: 0.5s ease;
 }
 .home-img img:hover{
     filter: drop-shadow(0 0 25px #c30fff);
+    transform: scale(1.1);
 }
 .home-content p{
     font-size: 1.8rem;
