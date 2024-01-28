@@ -299,19 +299,23 @@ span{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 2.5rem;
+    margin: 3px;
 }
 .project-container .project-box{
     position: relative;
     border-radius: 2rem;
     height: 550px;
+    /* min-width:30vw ; */
+    width: calc(500px);
     overflow: hidden;
     display: flex; 
+    justify-content: center;
     flex-wrap: wrap; 
     background-color: var(--main-color);
-   transition: 0.5s ease;
-   margin: 2rem;
+    transition: 0.5s ease;
+    margin: 2rem;
 }
-.project-container .project-box:hover{
+ .project-container .project-box:hover{
     position: relative;
     border-radius: 2rem;
     height: 550px;
@@ -319,9 +323,9 @@ span{
     display: flex; 
     flex-wrap: wrap; 
    background-color: var(--main-color);
-   transform: scale(1.01);
+   transform: scale(1.03);
    margin: 2rem;
-}
+} 
 .project-container .project-box img{
     height: 100%;
     width: 100%;
@@ -330,7 +334,7 @@ span{
     transition: 0.5s ease;
 
 }
-.project-box:hover img{
+.project-box img:hover{
     transform: scale(1.1);
        
 
@@ -445,27 +449,27 @@ span{
 }
 .bar .progress-line.html span{
     width: 100%;
-    background-color: rgb(26, 239, 97);
+    background-color: rgb(28, 143, 67);
 }
 .bar .progress-line.css span{
     width: 60%;
-    background-color: rgb(32, 173, 79);
+    background-color: rgb(207, 17, 194);
 }
 .bar .progress-line.js span{
     width: 70%;
-    background-color: rgb(20, 176, 197);
+    background-color: rgb(20, 197, 144);
 }
 .bar .progress-line.nodejs span{
     width: 90%;
-    background-color: rgb(26, 231, 37);
+    background-color: rgb(102, 61, 223)
 }
 .bar .progress-line.reactjs span{
     width: 5%;
-    background-color: rgb(223, 122, 33);
+    background-color: rgb(252, 75, 5);
 }
 .bar .progress-line.mongoDB span{
     width: 80%;
-    background-color: rgb(41, 134, 221);
+    background-color: rgb(42, 213, 116);
 }
 .timeline-section{
     min-width: 100vh;
@@ -723,5 +727,15 @@ span{
     .timeline-item:nth-child(odd),
     .timeline-item:nth-child(even) {
         padding-left: 37px;
+    }
+}
+@media (max-width:600px){
+    html{
+        font-size: 55%;
+    }
+    .project-container{
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0 5rem;
     }
 }
